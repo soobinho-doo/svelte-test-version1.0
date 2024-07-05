@@ -1,0 +1,41 @@
+:root {
+    font-family: "Inter", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif";
+    line-height: 1.5;
+    --color-white: #000;
+    --bg-white:#FFF;
+    --text-white:#FFF;
+    --text-black:#000;
+    --border-black-1:#000;
+    --border-black-2:#000;
+    --fill:#000;
+    --stroke:#000;
+  }
+  
+  /* Dark */
+  [data-theme="dark"] {
+    --color-white: #FFF;
+    --bg-white: #3D3B40;
+    --text-white:#000;
+    --text-black:#FFF;
+    --border-black-1:#FFF;
+    --border-black-2:#FFF;
+    --fill:#FFF;
+    --stroke:#FFF;
+  }
+  
+  
+  html {height: 100%; font-size:100%;}
+  body {height: 100%; margin: 0px; padding:0px; background-color:var(--bg-white); color:var(--text-black); transition: background-color 0.2s, color 0.2s;}
+  div, input, button, select, textarea { box-sizing: border-box; }
+  input {outline:none; background-color:var(--bg-white); color:var(--text-black);}
+  input:disabled {background-color:#6b728017;}
+  li {list-style: none;}
+  ul {padding:0px; margin:0px;}
+  a {text-decoration:none; color:var(--text-black); cursor: pointer;}
+  p {margin:0px; color:var(--text-color-black);}
+  span {color:var(--text-black);}
+  button { cursor: pointer; color:var(--text-black); padding:0px;}
+  img {max-width:100%;}
+  svg {vertical-align:middle;}
+  .svg-fill {fill:var(--fill)}
+  #app {height:100%;}
